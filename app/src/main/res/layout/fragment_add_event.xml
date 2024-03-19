@@ -29,13 +29,13 @@
         tools:layout_editor_absoluteX="42dp"
         tools:layout_editor_absoluteY="29dp" />
 
-    <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="wrap_content"
+    <CalendarView
+        android:id="@+id/calendarView4"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="date"
-        tools:layout_editor_absoluteX="43dp"
+        android:visibility="visible"
+        app:layout_constraintDimensionRatio="w,1:1"
+        tools:layout_editor_absoluteX="29dp"
         tools:layout_editor_absoluteY="66dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
