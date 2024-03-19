@@ -10,6 +10,8 @@
     <string name="menu_schedule">Agenda</string>
     <string name="menu_settings">Configurações</string>
     <string name="menu_info">Sobre</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="placeholder">texto de place holder</string>
+
+
 </resources>
