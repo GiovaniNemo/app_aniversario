@@ -1,10 +1,10 @@
-package com.example.app_aniversario.ui.gallery
+package com.example.app_aniversario.ui.schedule
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class GalleryViewModel : ViewModel() {
+class ScheduleViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = ""
