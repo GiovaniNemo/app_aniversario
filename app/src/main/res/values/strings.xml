@@ -17,5 +17,8 @@
     <string name="save">Salvar</string>
     <string name="escolha_a_data">Escolha a data</string>
 
+    <string name="mode_dark">Mudar para modo escuro</string>
+    <string name="notfi">Receber notificação</string>
+
 
 </resources>
