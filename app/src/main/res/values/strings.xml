@@ -13,7 +13,7 @@
 
     <string name="placeholder">texto de place holder</string>
     <string name="niver_event">Aniversário, evento...</string>
-    <string name="titulo">Título</string>
+    <string name="titulo">Nome do Aniversariante</string>
     <string name="save">Salvar</string>
     <string name="escolha_a_data">Escolha a data</string>
 

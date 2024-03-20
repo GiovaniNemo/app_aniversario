@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.settings.GalleryFragment">
+    tools:context=".ui.settings.GalleryFragment"
+    android:background="@color/dark_theme">
 
     <TextView
         android:id="@+id/text_gallery"
@@ -22,16 +23,20 @@
 
     <Switch
         android:id="@+id/swt_DarkMode"
-        android:layout_height="50dp"
         android:layout_width="320dp"
+
+        android:layout_height="50dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="9dp"
         android:checked="false"
         android:clickable="true"
         android:focusable="true"
+        android:fontFamily="monospace"
         android:padding="1dp"
         android:text="@string/mode_dark"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,10 +54,13 @@
         android:checked="false"
         android:clickable="true"
         android:focusable="true"
+        android:fontFamily="monospace"
         android:maxWidth="320dp"
         android:maxHeight="320dp"
         android:padding="1dp"
         android:text="@string/notfi"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,6 +73,7 @@
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
         android:text="@string/placeholder"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/swt_notfi"
