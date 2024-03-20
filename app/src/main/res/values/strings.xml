@@ -10,4 +10,8 @@
     <string name="menu_schedule">Agenda</string>
     <string name="menu_settings">Configurações</string>
     <string name="menu_info">Sobre</string>
+
+    <string name="placeholder">texto de place holder</string>
+
+
 </resources>
