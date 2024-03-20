@@ -14,8 +14,7 @@
     <string name="placeholder">texto de place holder</string>
 
     <string name="mode_dark">Mudar para modo escuro</string>
-
-
+    <string name="notfi">Receber notificação</string>
 
 
 </resources>

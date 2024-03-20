@@ -22,15 +22,15 @@
 
     <Switch
         android:id="@+id/swt_DarkMode"
-        android:layout_width="0dp"
         android:layout_height="50dp"
+        android:layout_width="320dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="9dp"
         android:checked="false"
         android:clickable="true"
         android:focusable="true"
-        android:maxHeight="320dp"
+        android:padding="1dp"
         android:text="@string/mode_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,5 +38,39 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/swt_notfi"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:checked="false"
+        android:clickable="true"
+        android:focusable="true"
+        android:maxWidth="320dp"
+        android:maxHeight="320dp"
+        android:padding="1dp"
+        android:text="@string/notfi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/swt_DarkMode"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <TextView
+        android:id="@+id/btn_backup"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/placeholder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/swt_notfi"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/swt_notfi"
+        app:layout_constraintTop_toBottomOf="@+id/swt_notfi"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
