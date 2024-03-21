@@ -15,13 +15,14 @@
         android:id="@+id/imageView2"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:layout_marginStart="7dp"
-        android:layout_marginEnd="6dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
         android:src="@drawable/calendar_month"
-        app:layout_constraintBottom_toBottomOf="@+id/spinner3"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextDate"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDate"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/spinner3"
+        app:layout_constraintTop_toTopOf="@+id/editTextDate"
+        app:layout_constraintVertical_bias="0.0"
         tools:ignore="ContentDescription" />
 
     <Button
@@ -29,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -40,12 +41,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="6dp"
         android:layout_marginEnd="6dp"
-        android:layout_marginBottom="37dp"
+        android:layout_marginBottom="38dp"
         android:backgroundTint="#000000"
         android:ems="10"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/spinner3"
+        app:layout_constraintBottom_toTopOf="@+id/editTextDate"
         app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -53,12 +55,11 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="334dp"
+        android:layout_marginBottom="2dp"
         android:text="Data"
         android:textColor="#000000"
-        app:layout_constraintBottom_toTopOf="@+id/spinner3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView2" />
+        app:layout_constraintBottom_toTopOf="@+id/editTextDate"
+        app:layout_constraintStart_toStartOf="@+id/editTextText" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -76,20 +77,34 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="1dp"
+        android:layout_marginBottom="2dp"
         android:text="@string/titulo"
         android:textColor="#000000"
         app:layout_constraintBottom_toTopOf="@+id/editTextText"
         app:layout_constraintStart_toStartOf="@+id/editTextText"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
-    <Spinner
-        android:id="@+id/spinner3"
+    <EditText
+        android:id="@+id/editTextDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="391dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="368dp"
+        android:backgroundTint="#000000"
+        android:ems="10"
+        android:inputType="date"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editTextText" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:src="@drawable/add"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="406dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
